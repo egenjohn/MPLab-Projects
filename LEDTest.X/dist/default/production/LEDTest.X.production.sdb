@@ -1,0 +1,754 @@
+[p LITE_MODE AUTOSTATIC PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1707 ]
+[d frameptr 6 ]
+"184 /Users/egenjohn/MPLABXProjects/LEDTest.X/mcc_generated_files/i2c.c
+[e E2207 . `uc
+I2C_MESSAGE_COMPLETE 0
+I2C_MESSAGE_FAIL 1
+I2C_MESSAGE_PENDING 2
+I2C_STUCK_START 3
+I2C_MESSAGE_ADDRESS_NO_ACK 4
+I2C_DATA_NO_ACK 5
+I2C_LOST_STATE 6
+]
+"186
+[e E2275 . `uc
+S_MASTER_IDLE 0
+S_MASTER_RESTART 1
+S_MASTER_SEND_ADDR 2
+S_MASTER_SEND_DATA 3
+S_MASTER_SEND_STOP 4
+S_MASTER_ACK_ADDR 5
+S_MASTER_RCV_DATA 6
+S_MASTER_RCV_STOP 7
+S_MASTER_ACK_RCV_DATA 8
+S_MASTER_NOACK_STOP 9
+S_MASTER_SEND_ADDR_10BIT_LSB 10
+S_MASTER_10BIT_RESTART 11
+]
+"123 /Users/egenjohn/MPLABXProjects/LEDTest.X/main.c
+[e E2239 . `uc
+I2C_MESSAGE_COMPLETE 0
+I2C_MESSAGE_FAIL 1
+I2C_MESSAGE_PENDING 2
+I2C_STUCK_START 3
+I2C_MESSAGE_ADDRESS_NO_ACK 4
+I2C_DATA_NO_ACK 5
+I2C_LOST_STATE 6
+]
+"307
+[e E2300 . `uc
+BMP280_REGISTER_DIG_T1 136
+BMP280_REGISTER_DIG_T2 138
+BMP280_REGISTER_DIG_T3 140
+BMP280_REGISTER_DIG_P1 142
+BMP280_REGISTER_DIG_P2 144
+BMP280_REGISTER_DIG_P3 146
+BMP280_REGISTER_DIG_P4 148
+BMP280_REGISTER_DIG_P5 150
+BMP280_REGISTER_DIG_P6 152
+BMP280_REGISTER_DIG_P7 154
+BMP280_REGISTER_DIG_P8 156
+BMP280_REGISTER_DIG_P9 158
+BMP280_REGISTER_CHIPID 208
+BMP280_REGISTER_VERSION 209
+BMP280_REGISTER_SOFTRESET 224
+BMP280_REGISTER_CAL26 225
+BMP280_REGISTER_CONTROL 244
+BMP280_REGISTER_CONFIG 245
+BMP280_REGISTER_PRESSUREDATA 247
+BMP280_REGISTER_TEMPDATA 250
+]
+"62 /Applications/microchip/xc8/v2.00/pic/sources/c90/common/float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 /Applications/microchip/xc8/v2.00/pic/sources/c90/common/ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"5 /Applications/microchip/xc8/v2.00/pic/sources/c90/common/lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"5 /Applications/microchip/xc8/v2.00/pic/sources/c90/common/lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"15 /Applications/microchip/xc8/v2.00/pic/sources/c90/common/Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 /Applications/microchip/xc8/v2.00/pic/sources/c90/common/Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"120 /Users/egenjohn/MPLABXProjects/LEDTest.X/main.c
+[v _BMP280_Write8 BMP280_Write8 `(c  1 e 1 0 ]
+"150
+[v _BMP280_Read BMP280_Read `(uc  1 e 1 0 ]
+"249
+[v _BMP280_read8 BMP280_read8 `(uc  1 e 1 0 ]
+"263
+[v _BMP280_read16 BMP280_read16 `(ui  1 e 2 0 ]
+"284
+[v _BMP280_readS16 BMP280_readS16 `(i  1 e 2 0 ]
+"296
+[v _BMP280_read24_le BMP280_read24_le `(ul  1 e 4 0 ]
+"305
+[v _BMP280_readCoefficients BMP280_readCoefficients `(v  1 e 1 0 ]
+"323
+[v _BMP280_readTemperature BMP280_readTemperature `(i  1 e 2 0 ]
+"366
+[v _ShiftOut ShiftOut `(v  1 e 1 0 ]
+"386
+[v _DisplayNum DisplayNum `(v  1 e 1 0 ]
+"433
+[v _TickISR TickISR `(v  1 e 1 0 ]
+"442
+[v _main main `(v  1 e 1 0 ]
+"198 /Users/egenjohn/MPLABXProjects/LEDTest.X/mcc_generated_files/i2c.c
+[v _I2C_Initialize I2C_Initialize `(v  1 e 1 0 ]
+"233
+[v _I2C_ISR I2C_ISR `(v  1 e 1 0 ]
+"563
+[v _I2C_FunctionComplete I2C_FunctionComplete `(v  1 e 1 0 ]
+"581
+[v _I2C_Stop I2C_Stop `(v  1 e 1 0 ]
+"598
+[v _I2C_MasterWrite I2C_MasterWrite `(v  1 e 1 0 ]
+"619
+[v _I2C_MasterRead I2C_MasterRead `(v  1 e 1 0 ]
+"641
+[v _I2C_MasterTRBInsert I2C_MasterTRBInsert `(v  1 e 1 0 ]
+"694
+[v _I2C_MasterReadTRBBuild I2C_MasterReadTRBBuild `(v  1 e 1 0 ]
+"707
+[v _I2C_MasterWriteTRBBuild I2C_MasterWriteTRBBuild `(v  1 e 1 0 ]
+"728
+[v _I2C_BusCollisionISR I2C_BusCollisionISR `(v  1 e 1 0 ]
+"51 /Users/egenjohn/MPLABXProjects/LEDTest.X/mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+"69 /Users/egenjohn/MPLABXProjects/LEDTest.X/mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"79
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"89
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+"52 /Users/egenjohn/MPLABXProjects/LEDTest.X/mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"63 /Users/egenjohn/MPLABXProjects/LEDTest.X/mcc_generated_files/tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+"89
+[v _TMR2_StartTimer TMR2_StartTimer `(v  1 e 1 0 ]
+"121
+[v _TMR2_ISR TMR2_ISR `(v  1 e 1 0 ]
+"139
+[v _TMR2_CallBack TMR2_CallBack `(v  1 e 1 0 ]
+"149
+[v _TMR2_SetInterruptHandler TMR2_SetInterruptHandler `(v  1 e 1 0 ]
+"153
+[v _TMR2_DefaultInterruptHandler TMR2_DefaultInterruptHandler `(v  1 e 1 0 ]
+[s S433 . 1 `uc 1 IOCIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 IOCIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"374 /Applications/microchip/xc8/v2.00/pic/include/pic16f1707.h
+[s S442 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 T0IE 1 0 :1:5 
+]
+[u S447 . 1 `S433 1 . 1 0 `S442 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES447  1 e 1 @11 ]
+[s S165 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSP1IF 1 0 :1:3 
+`uc 1 . 1 0 :2:4 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 TMR1GIF 1 0 :1:7 
+]
+"600
+[s S173 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 CCPIF 1 0 :1:2 
+]
+[u S176 . 1 `S165 1 . 1 0 `S173 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES176  1 e 1 @17 ]
+[s S476 . 1 `uc 1 CCP2IF 1 0 :1:0 
+`uc 1 . 1 0 :2:1 
+`uc 1 BCL1IF 1 0 :1:3 
+]
+"652
+[u S480 . 1 `S476 1 . 1 0 ]
+[v _PIR2bits PIR2bits `VES480  1 e 1 @18 ]
+"897
+[v _TMR2 TMR2 `VEuc  1 e 1 @26 ]
+"917
+[v _PR2 PR2 `VEuc  1 e 1 @27 ]
+"937
+[v _T2CON T2CON `VEuc  1 e 1 @28 ]
+[s S749 . 1 `uc 1 T2CKPS 1 0 :2:0 
+`uc 1 TMR2ON 1 0 :1:2 
+`uc 1 T2OUTPS 1 0 :4:3 
+]
+"958
+[s S753 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+`uc 1 T2CKPS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 T2OUTPS0 1 0 :1:3 
+`uc 1 T2OUTPS1 1 0 :1:4 
+`uc 1 T2OUTPS2 1 0 :1:5 
+`uc 1 T2OUTPS3 1 0 :1:6 
+]
+[u S761 . 1 `S749 1 . 1 0 `S753 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES761  1 e 1 @28 ]
+"1008
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"1053
+[v _TRISB TRISB `VEuc  1 e 1 @141 ]
+"1092
+[v _TRISC TRISC `VEuc  1 e 1 @142 ]
+[s S191 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSP1IE 1 0 :1:3 
+`uc 1 . 1 0 :2:4 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 TMR1GIE 1 0 :1:7 
+]
+"1174
+[s S199 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 CCPIE 1 0 :1:2 
+]
+[u S202 . 1 `S191 1 . 1 0 `S199 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES202  1 e 1 @145 ]
+[s S465 . 1 `uc 1 CCP2IE 1 0 :1:0 
+`uc 1 . 1 0 :2:1 
+`uc 1 BCL1IE 1 0 :1:3 
+]
+"1226
+[u S469 . 1 `S465 1 . 1 0 ]
+[v _PIE2bits PIE2bits `VES469  1 e 1 @146 ]
+[s S34 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 TMR0SE 1 0 :1:4 
+`uc 1 TMR0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nWPUEN 1 0 :1:7 
+]
+"1285
+[s S41 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+]
+[u S48 . 1 `S34 1 . 1 0 `S41 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES48  1 e 1 @149 ]
+"1402
+[v _WDTCON WDTCON `VEuc  1 e 1 @151 ]
+"1461
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @152 ]
+"1519
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+"1591
+[v _OSCSTAT OSCSTAT `VEuc  1 e 1 @154 ]
+"1881
+[v _LATA LATA `VEuc  1 e 1 @268 ]
+"1926
+[v _LATB LATB `VEuc  1 e 1 @269 ]
+"1965
+[v _LATC LATC `VEuc  1 e 1 @270 ]
+[s S580 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 LATC3 1 0 :1:3 
+`uc 1 LATC4 1 0 :1:4 
+`uc 1 LATC5 1 0 :1:5 
+`uc 1 LATC6 1 0 :1:6 
+`uc 1 LATC7 1 0 :1:7 
+]
+"1982
+[u S589 . 1 `S580 1 . 1 0 ]
+[v _LATCbits LATCbits `VES589  1 e 1 @270 ]
+"2182
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"2221
+[v _ANSELB ANSELB `VEuc  1 e 1 @397 ]
+"2248
+[v _ANSELC ANSELC `VEuc  1 e 1 @398 ]
+"2490
+[v _WPUA WPUA `VEuc  1 e 1 @524 ]
+"2540
+[v _WPUB WPUB `VEuc  1 e 1 @525 ]
+"2579
+[v _WPUC WPUC `VEuc  1 e 1 @526 ]
+"2641
+[v _SSP1BUF SSP1BUF `VEuc  1 e 1 @529 ]
+"2895
+[v _SSP1ADD SSP1ADD `VEuc  1 e 1 @530 ]
+"3403
+[v _SSP1STAT SSP1STAT `VEuc  1 e 1 @532 ]
+"3525
+[v _SSP1CON1 SSP1CON1 `VEuc  1 e 1 @533 ]
+[s S217 . 1 `uc 1 SSPM 1 0 :4:0 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+"3558
+[s S223 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+]
+[u S228 . 1 `S217 1 . 1 0 `S223 1 . 1 0 ]
+[v _SSP1CON1bits SSP1CON1bits `VES228  1 e 1 @533 ]
+[s S243 . 1 `uc 1 SEN 1 0 :1:0 
+`uc 1 RSEN 1 0 :1:1 
+`uc 1 PEN 1 0 :1:2 
+`uc 1 RCEN 1 0 :1:3 
+`uc 1 ACKEN 1 0 :1:4 
+`uc 1 ACKDT 1 0 :1:5 
+`uc 1 ACKSTAT 1 0 :1:6 
+`uc 1 GCEN 1 0 :1:7 
+]
+"3817
+[u S252 . 1 `S243 1 . 1 0 ]
+[v _SSP1CON2bits SSP1CON2bits `VES252  1 e 1 @534 ]
+"3917
+[v _SSP1CON3 SSP1CON3 `VEuc  1 e 1 @535 ]
+"4039
+[v _ODCONA ODCONA `VEuc  1 e 1 @652 ]
+"4084
+[v _ODCONB ODCONB `VEuc  1 e 1 @653 ]
+"4123
+[v _ODCONC ODCONC `VEuc  1 e 1 @654 ]
+"5449
+[v _PPSLOCK PPSLOCK `VEuc  1 e 1 @3599 ]
+[s S71 . 1 `uc 1 PPSLOCKED 1 0 :1:0 
+]
+"5459
+[u S73 . 1 `S71 1 . 1 0 ]
+[v _PPSLOCKbits PPSLOCKbits `VES73  1 e 1 @3599 ]
+[s S99 . 1 `uc 1 SSPCLKPPS 1 0 :5:0 
+]
+"5599
+[u S101 . 1 `S99 1 . 1 0 ]
+[v _SSPCLKPPSbits SSPCLKPPSbits `VES101  1 e 1 @3616 ]
+[s S92 . 1 `uc 1 SSPDATPPS 1 0 :5:0 
+]
+"5619
+[u S94 . 1 `S92 1 . 1 0 ]
+[v _SSPDATPPSbits SSPDATPPSbits `VES94  1 e 1 @3617 ]
+[s S78 . 1 `uc 1 RB4PPS 1 0 :5:0 
+]
+"5759
+[u S80 . 1 `S78 1 . 1 0 ]
+[v _RB4PPSbits RB4PPSbits `VES80  1 e 1 @3740 ]
+[s S85 . 1 `uc 1 RB6PPS 1 0 :5:0 
+]
+"5799
+[u S87 . 1 `S85 1 . 1 0 ]
+[v _RB6PPSbits RB6PPSbits `VES87  1 e 1 @3742 ]
+"6592
+[v _GIE GIE `VEb  1 e 0 @95 ]
+[s S545 . 6 `ui 1 dig_T1 2 0 `i 1 dig_T2 2 2 `i 1 dig_T3 2 4 ]
+"85 /Users/egenjohn/MPLABXProjects/LEDTest.X/main.c
+[v __bmp280_calib _bmp280_calib `S545  1 e 6 0 ]
+"86
+[v _t_fine t_fine `l  1 e 4 0 ]
+"344
+[v _Decimal Decimal `uc  1 s 1 Decimal ]
+"345
+[v _Digits Digits `[10]uc  1 s 10 Digits ]
+"431
+[v _curTemp curTemp `ui  1 e 2 0 ]
+"432
+[v _checkTemp checkTemp `uc  1 e 1 0 ]
+[s S119 . 4 `ui 1 address 2 0 `uc 1 length 1 2 `*.4uc 1 pbuffer 1 3 ]
+"184 /Users/egenjohn/MPLABXProjects/LEDTest.X/mcc_generated_files/i2c.c
+[s S131 . 3 `uc 1 count 1 0 `*.4S119 1 ptrb_list 1 1 `*.4E2207 1 pTrFlag 1 2 ]
+[v _i2c_tr_queue i2c_tr_queue `[1]S131  1 s 3 i2c_tr_queue ]
+"185
+[s S135 . 1 `uc 1 full 1 0 :1:0 
+`uc 1 empty 1 0 :1:1 
+`uc 1 reserved 1 0 :6:2 
+]
+[u S139 . 1 `S135 1 s 1 0 `uc 1 status 1 0 ]
+[s S142 . 5 `*.4S131 1 pTrTail 1 0 `*.4S131 1 pTrHead 1 1 `S139 1 trStatus 1 2 `uc 1 i2cDoneFlag 1 3 `uc 1 i2cErrors 1 4 ]
+[v _i2c_object i2c_object `S142  1 s 5 i2c_object ]
+"186
+[v _i2c_state i2c_state `E2275  1 s 1 i2c_state ]
+"187
+[v _i2c_trb_count i2c_trb_count `uc  1 s 1 i2c_trb_count ]
+"189
+[v _p_i2c_trb_current p_i2c_trb_current `*.4S119  1 s 1 p_i2c_trb_current ]
+"190
+[v _p_i2c_current p_i2c_current `*.4S131  1 s 1 p_i2c_current ]
+"57 /Users/egenjohn/MPLABXProjects/LEDTest.X/mcc_generated_files/tmr2.c
+[v _TMR2_InterruptHandler TMR2_InterruptHandler `*.37(v  1 e 2 0 ]
+"442 /Users/egenjohn/MPLABXProjects/LEDTest.X/main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"473
+[v main@chipId chipId `uc  1 a 1 12 ]
+"498
+} 0
+"69 /Users/egenjohn/MPLABXProjects/LEDTest.X/mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"77
+} 0
+"89
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+{
+"93
+} 0
+"63 /Users/egenjohn/MPLABXProjects/LEDTest.X/mcc_generated_files/tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+{
+"87
+} 0
+"89
+[v _TMR2_StartTimer TMR2_StartTimer `(v  1 e 1 0 ]
+{
+"93
+} 0
+"149
+[v _TMR2_SetInterruptHandler TMR2_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v TMR2_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
+"151
+} 0
+"52 /Users/egenjohn/MPLABXProjects/LEDTest.X/mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"95
+[v PIN_MANAGER_Initialize@state state `uc  1 a 1 0 ]
+"111
+} 0
+"79 /Users/egenjohn/MPLABXProjects/LEDTest.X/mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"87
+} 0
+"198 /Users/egenjohn/MPLABXProjects/LEDTest.X/mcc_generated_files/i2c.c
+[v _I2C_Initialize I2C_Initialize `(v  1 e 1 0 ]
+{
+"222
+} 0
+"386 /Users/egenjohn/MPLABXProjects/LEDTest.X/main.c
+[v _DisplayNum DisplayNum `(v  1 e 1 0 ]
+{
+"388
+[v DisplayNum@i i `uc  1 a 1 19 ]
+"389
+[v DisplayNum@outChar outChar `uc  1 a 1 18 ]
+"386
+[v DisplayNum@val val `ui  1 p 2 14 ]
+[v DisplayNum@decPos decPos `uc  1 p 1 16 ]
+"430
+} 0
+"5 /Applications/microchip/xc8/v2.00/pic/sources/c90/common/lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 5 ]
+"5
+[v ___lwmod@divisor divisor `ui  1 p 2 0 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 2 ]
+"25
+} 0
+"366 /Users/egenjohn/MPLABXProjects/LEDTest.X/main.c
+[v _ShiftOut ShiftOut `(v  1 e 1 0 ]
+{
+[v ShiftOut@thisByte thisByte `uc  1 a 1 wreg ]
+"369
+[v ShiftOut@i i `uc  1 a 1 2 ]
+"366
+[v ShiftOut@thisByte thisByte `uc  1 a 1 wreg ]
+"368
+[v ShiftOut@thisByte thisByte `uc  1 a 1 1 ]
+"384
+} 0
+"323
+[v _BMP280_readTemperature BMP280_readTemperature `(i  1 e 2 0 ]
+{
+"327
+[v BMP280_readTemperature@adc_T adc_T `l  1 a 4 6 ]
+"339
+[v BMP280_readTemperature@T T `ui  1 a 2 4 ]
+"341
+} 0
+"15 /Applications/microchip/xc8/v2.00/pic/sources/c90/common/Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"5 /Applications/microchip/xc8/v2.00/pic/sources/c90/common/lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 12 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 11 ]
+"5
+[v ___lwdiv@divisor divisor `ui  1 p 2 6 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 8 ]
+"30
+} 0
+"15 /Applications/microchip/xc8/v2.00/pic/sources/c90/common/Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+{
+"17
+[v ___lmul@product product `ul  1 a 4 8 ]
+"15
+[v ___lmul@multiplier multiplier `ul  1 p 4 0 ]
+[v ___lmul@multiplicand multiplicand `ul  1 p 4 4 ]
+"129
+} 0
+"296 /Users/egenjohn/MPLABXProjects/LEDTest.X/main.c
+[v _BMP280_read24_le BMP280_read24_le `(ul  1 e 4 0 ]
+{
+[v BMP280_read24_le@reg reg `uc  1 a 1 wreg ]
+"298
+[v BMP280_read24_le@value value `[3]uc  1 a 3 46 ]
+"296
+[v BMP280_read24_le@reg reg `uc  1 a 1 wreg ]
+"297
+[v BMP280_read24_le@F2349 F2349 `[3]uc  1 s 3 F2349 ]
+[v BMP280_read24_le@reg reg `uc  1 a 1 45 ]
+"303
+} 0
+"305
+[v _BMP280_readCoefficients BMP280_readCoefficients `(v  1 e 1 0 ]
+{
+"321
+} 0
+"284
+[v _BMP280_readS16 BMP280_readS16 `(i  1 e 2 0 ]
+{
+[v BMP280_readS16@reg reg `uc  1 a 1 wreg ]
+[v BMP280_readS16@reg reg `uc  1 a 1 wreg ]
+"286
+[v BMP280_readS16@reg reg `uc  1 a 1 38 ]
+"288
+} 0
+"263
+[v _BMP280_read16 BMP280_read16 `(ui  1 e 2 0 ]
+{
+[v BMP280_read16@reg reg `uc  1 a 1 wreg ]
+"265
+[v BMP280_read16@value value `ui  1 a 2 33 ]
+"263
+[v BMP280_read16@reg reg `uc  1 a 1 wreg ]
+"267
+[v BMP280_read16@reg reg `uc  1 a 1 32 ]
+"270
+} 0
+"249
+[v _BMP280_read8 BMP280_read8 `(uc  1 e 1 0 ]
+{
+[v BMP280_read8@reg reg `uc  1 a 1 wreg ]
+"251
+[v BMP280_read8@value value `uc  1 a 1 31 ]
+"249
+[v BMP280_read8@reg reg `uc  1 a 1 wreg ]
+"253
+[v BMP280_read8@reg reg `uc  1 a 1 30 ]
+"256
+} 0
+"150
+[v _BMP280_Read BMP280_Read `(uc  1 e 1 0 ]
+{
+"151
+[v BMP280_Read@address address `uc  1 a 1 wreg ]
+"156
+[v BMP280_Read@writeBuffer writeBuffer `[3]uc  1 a 3 19 ]
+"157
+[v BMP280_Read@timeOut timeOut `ui  1 a 2 26 ]
+"158
+[v BMP280_Read@counter counter `ui  1 a 2 23 ]
+"155
+[v BMP280_Read@status status `E2239  1 a 1 28 ]
+"159
+[v BMP280_Read@pD pD `*.4uc  1 a 1 25 ]
+[v BMP280_Read@ret ret `uc  1 a 1 18 ]
+"151
+[v BMP280_Read@address address `uc  1 a 1 wreg ]
+"152
+[v BMP280_Read@pData pData `*.4uc  1 p 1 14 ]
+"153
+[v BMP280_Read@nCount nCount `ui  1 p 2 15 ]
+"161
+[v BMP280_Read@address address `uc  1 a 1 22 ]
+"247
+} 0
+"619 /Users/egenjohn/MPLABXProjects/LEDTest.X/mcc_generated_files/i2c.c
+[v _I2C_MasterRead I2C_MasterRead `(v  1 e 1 0 ]
+{
+"620
+[v I2C_MasterRead@pdata pdata `*.4uc  1 a 1 wreg ]
+[v I2C_MasterRead@pdata pdata `*.4uc  1 a 1 wreg ]
+"621
+[v I2C_MasterRead@length length `uc  1 p 1 7 ]
+"622
+[v I2C_MasterRead@address address `ui  1 p 2 8 ]
+"623
+[v I2C_MasterRead@pflag pflag `*.4E2207  1 p 1 10 ]
+[s S119 . 4 `ui 1 address 2 0 `uc 1 length 1 2 `*.4uc 1 pbuffer 1 3 ]
+"625
+[v I2C_MasterRead@trBlock trBlock `S119  1 s 4 trBlock ]
+"629
+[v I2C_MasterRead@pdata pdata `*.4uc  1 a 1 13 ]
+"639
+} 0
+"694
+[v _I2C_MasterReadTRBBuild I2C_MasterReadTRBBuild `(v  1 e 1 0 ]
+{
+[s S119 . 4 `ui 1 address 2 0 `uc 1 length 1 2 `*.4uc 1 pbuffer 1 3 ]
+"695
+[v I2C_MasterReadTRBBuild@ptrb ptrb `*.4S119  1 a 1 wreg ]
+[v I2C_MasterReadTRBBuild@ptrb ptrb `*.4S119  1 a 1 wreg ]
+"696
+[v I2C_MasterReadTRBBuild@pdata pdata `*.4uc  1 p 1 0 ]
+"697
+[v I2C_MasterReadTRBBuild@length length `uc  1 p 1 1 ]
+"698
+[v I2C_MasterReadTRBBuild@address address `ui  1 p 2 2 ]
+"700
+"695
+[v I2C_MasterReadTRBBuild@ptrb ptrb `*.4S119  1 a 1 6 ]
+"705
+} 0
+"120 /Users/egenjohn/MPLABXProjects/LEDTest.X/main.c
+[v _BMP280_Write8 BMP280_Write8 `(c  1 e 1 0 ]
+{
+[v BMP280_Write8@address address `uc  1 a 1 wreg ]
+"124
+[v BMP280_Write8@writeBuffer writeBuffer `[2]uc  1 a 2 18 ]
+"123
+[v BMP280_Write8@status status `E2239  1 a 1 20 ]
+"120
+[v BMP280_Write8@address address `uc  1 a 1 wreg ]
+"121
+[v BMP280_Write8@pData pData `uc  1 p 1 14 ]
+"126
+[v BMP280_Write8@address address `uc  1 a 1 17 ]
+"148
+} 0
+"598 /Users/egenjohn/MPLABXProjects/LEDTest.X/mcc_generated_files/i2c.c
+[v _I2C_MasterWrite I2C_MasterWrite `(v  1 e 1 0 ]
+{
+"599
+[v I2C_MasterWrite@pdata pdata `*.4uc  1 a 1 wreg ]
+[v I2C_MasterWrite@pdata pdata `*.4uc  1 a 1 wreg ]
+"600
+[v I2C_MasterWrite@length length `uc  1 p 1 7 ]
+"601
+[v I2C_MasterWrite@address address `ui  1 p 2 8 ]
+"602
+[v I2C_MasterWrite@pflag pflag `*.4E2207  1 p 1 10 ]
+[s S119 . 4 `ui 1 address 2 0 `uc 1 length 1 2 `*.4uc 1 pbuffer 1 3 ]
+"604
+[v I2C_MasterWrite@trBlock trBlock `S119  1 s 4 trBlock ]
+"607
+[v I2C_MasterWrite@pdata pdata `*.4uc  1 a 1 13 ]
+"617
+} 0
+"707
+[v _I2C_MasterWriteTRBBuild I2C_MasterWriteTRBBuild `(v  1 e 1 0 ]
+{
+[s S119 . 4 `ui 1 address 2 0 `uc 1 length 1 2 `*.4uc 1 pbuffer 1 3 ]
+"708
+[v I2C_MasterWriteTRBBuild@ptrb ptrb `*.4S119  1 a 1 wreg ]
+[v I2C_MasterWriteTRBBuild@ptrb ptrb `*.4S119  1 a 1 wreg ]
+"709
+[v I2C_MasterWriteTRBBuild@pdata pdata `*.4uc  1 p 1 0 ]
+"710
+[v I2C_MasterWriteTRBBuild@length length `uc  1 p 1 1 ]
+"711
+[v I2C_MasterWriteTRBBuild@address address `ui  1 p 2 2 ]
+"713
+"708
+[v I2C_MasterWriteTRBBuild@ptrb ptrb `*.4S119  1 a 1 6 ]
+"716
+} 0
+"641
+[v _I2C_MasterTRBInsert I2C_MasterTRBInsert `(v  1 e 1 0 ]
+{
+"642
+[v I2C_MasterTRBInsert@count count `uc  1 a 1 wreg ]
+[v I2C_MasterTRBInsert@count count `uc  1 a 1 wreg ]
+[s S119 . 4 `ui 1 address 2 0 `uc 1 length 1 2 `*.4uc 1 pbuffer 1 3 ]
+"643
+[v I2C_MasterTRBInsert@ptrb_list ptrb_list `*.4S119  1 p 1 0 ]
+"644
+[v I2C_MasterTRBInsert@pflag pflag `*.4E2207  1 p 1 1 ]
+"648
+[v I2C_MasterTRBInsert@count count `uc  1 a 1 3 ]
+"692
+} 0
+"51 /Users/egenjohn/MPLABXProjects/LEDTest.X/mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+{
+"70
+} 0
+"121 /Users/egenjohn/MPLABXProjects/LEDTest.X/mcc_generated_files/tmr2.c
+[v _TMR2_ISR TMR2_ISR `(v  1 e 1 0 ]
+{
+"123
+[v TMR2_ISR@CountCallBack CountCallBack `VEui  1 s 2 CountCallBack ]
+"137
+} 0
+"139
+[v _TMR2_CallBack TMR2_CallBack `(v  1 e 1 0 ]
+{
+"147
+} 0
+"153
+[v _TMR2_DefaultInterruptHandler TMR2_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"156
+} 0
+"433 /Users/egenjohn/MPLABXProjects/LEDTest.X/main.c
+[v _TickISR TickISR `(v  1 e 1 0 ]
+{
+"437
+} 0
+"233 /Users/egenjohn/MPLABXProjects/LEDTest.X/mcc_generated_files/i2c.c
+[v _I2C_ISR I2C_ISR `(v  1 e 1 0 ]
+{
+"236
+[v I2C_ISR@pi2c_buf_ptr pi2c_buf_ptr `*.4uc  1 s 1 pi2c_buf_ptr ]
+"237
+[v I2C_ISR@i2c_address i2c_address `ui  1 s 2 i2c_address ]
+"238
+[v I2C_ISR@i2c_bytes_left i2c_bytes_left `uc  1 s 1 i2c_bytes_left ]
+"239
+[v I2C_ISR@i2c_10bit_address_restart i2c_10bit_address_restart `uc  1 s 1 i2c_10bit_address_restart ]
+"561
+} 0
+"581
+[v _I2C_Stop I2C_Stop `(v  1 e 1 0 ]
+{
+[v I2C_Stop@completion_code completion_code `E2207  1 a 1 wreg ]
+[v I2C_Stop@completion_code completion_code `E2207  1 a 1 wreg ]
+"584
+[v I2C_Stop@completion_code completion_code `E2207  1 a 1 1 ]
+"596
+} 0
+"563
+[v _I2C_FunctionComplete I2C_FunctionComplete `(v  1 e 1 0 ]
+{
+"579
+} 0
+"728
+[v _I2C_BusCollisionISR I2C_BusCollisionISR `(v  1 e 1 0 ]
+{
+"731
+} 0
