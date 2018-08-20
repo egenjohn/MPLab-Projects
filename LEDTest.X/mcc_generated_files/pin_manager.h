@@ -141,6 +141,7 @@
 #define IO_DATA_SetAnalogMode()  do { ANSELCbits.ANSC2 = 1; } while(0)
 #define IO_DATA_SetDigitalMode() do { ANSELCbits.ANSC2 = 0; } while(0)
 
+#ifdef BREADBOARD
 // get/set IO_DIG0 aliases
 #define IO_DIG0_TRIS               TRISCbits.TRISC3
 #define IO_DIG0_LAT                LATCbits.LATC3
@@ -214,6 +215,81 @@
 #define IO_DIG3_SetOpenDrain()   do { ODCONCbits.ODC6 = 0; } while(0)
 #define IO_DIG3_SetAnalogMode()  do { ANSELCbits.ANSC6 = 1; } while(0)
 #define IO_DIG3_SetDigitalMode() do { ANSELCbits.ANSC6 = 0; } while(0)
+#else
+// get/set IO_DIG0 aliases
+#define IO_DIG0_TRIS               TRISCbits.TRISC5
+#define IO_DIG0_LAT                LATCbits.LATC5
+#define IO_DIG0_PORT               PORTCbits.RC5
+#define IO_DIG0_WPU                WPUCbits.WPUC5
+#define IO_DIG0_OD                ODCONCbits.ODC5
+#define IO_DIG0_SetHigh()            do { LATCbits.LATC5 = 1; } while(0)
+#define IO_DIG0_SetLow()             do { LATCbits.LATC5 = 0; } while(0)
+#define IO_DIG0_Toggle()             do { LATCbits.LATC5 = ~LATCbits.LATC5; } while(0)
+#define IO_DIG0_GetValue()           PORTCbits.RC5
+#define IO_DIG0_SetDigitalInput()    do { TRISCbits.TRISC5 = 1; } while(0)
+#define IO_DIG0_SetDigitalOutput()   do { TRISCbits.TRISC5 = 0; } while(0)
+#define IO_DIG0_SetPullup()      do { WPUCbits.WPUC5 = 1; } while(0)
+#define IO_DIG0_ResetPullup()    do { WPUCbits.WPUC5 = 0; } while(0)
+#define IO_DIG0_SetPushPull()    do { ODCONCbits.ODC5 = 1; } while(0)
+#define IO_DIG0_SetOpenDrain()   do { ODCONCbits.ODC5 = 0; } while(0)
+
+// get/set IO_DIG1 aliases
+#define IO_DIG1_TRIS               TRISCbits.TRISC3
+#define IO_DIG1_LAT                LATCbits.LATC3
+#define IO_DIG1_PORT               PORTCbits.RC3
+#define IO_DIG1_WPU                WPUCbits.WPUC3
+#define IO_DIG1_OD                ODCONCbits.ODC3
+#define IO_DIG1_ANS                ANSELCbits.ANSC3
+#define IO_DIG1_SetHigh()            do { LATCbits.LATC3 = 1; } while(0)
+#define IO_DIG1_SetLow()             do { LATCbits.LATC3 = 0; } while(0)
+#define IO_DIG1_Toggle()             do { LATCbits.LATC3 = ~LATCbits.LATC3; } while(0)
+#define IO_DIG1_GetValue()           PORTCbits.RC3
+#define IO_DIG1_SetDigitalInput()    do { TRISCbits.TRISC3 = 1; } while(0)
+#define IO_DIG1_SetDigitalOutput()   do { TRISCbits.TRISC3 = 0; } while(0)
+#define IO_DIG1_SetPullup()      do { WPUCbits.WPUC3 = 1; } while(0)
+#define IO_DIG1_ResetPullup()    do { WPUCbits.WPUC3 = 0; } while(0)
+#define IO_DIG1_SetPushPull()    do { ODCONCbits.ODC3 = 1; } while(0)
+#define IO_DIG1_SetOpenDrain()   do { ODCONCbits.ODC3 = 0; } while(0)
+#define IO_DIG1_SetAnalogMode()  do { ANSELCbits.ANSC3 = 1; } while(0)
+#define IO_DIG1_SetDigitalMode() do { ANSELCbits.ANSC3 = 0; } while(0)
+
+// get/set IO_DIG2 aliases
+#define IO_DIG2_TRIS               TRISCbits.TRISC6
+#define IO_DIG2_LAT                LATCbits.LATC6
+#define IO_DIG2_PORT               PORTCbits.RC6
+#define IO_DIG2_WPU                WPUCbits.WPUC6
+#define IO_DIG2_OD                ODCONCbits.ODC6
+#define IO_DIG2_ANS                ANSELCbits.ANSC6
+#define IO_DIG2_SetHigh()            do { LATCbits.LATC6 = 1; } while(0)
+#define IO_DIG2_SetLow()             do { LATCbits.LATC6 = 0; } while(0)
+#define IO_DIG2_Toggle()             do { LATCbits.LATC6 = ~LATCbits.LATC6; } while(0)
+#define IO_DIG2_GetValue()           PORTCbits.RC6
+#define IO_DIG2_SetDigitalInput()    do { TRISCbits.TRISC6 = 1; } while(0)
+#define IO_DIG2_SetDigitalOutput()   do { TRISCbits.TRISC6 = 0; } while(0)
+#define IO_DIG2_SetPullup()      do { WPUCbits.WPUC6 = 1; } while(0)
+#define IO_DIG2_ResetPullup()    do { WPUCbits.WPUC6 = 0; } while(0)
+#define IO_DIG2_SetPushPull()    do { ODCONCbits.ODC6 = 1; } while(0)
+#define IO_DIG2_SetOpenDrain()   do { ODCONCbits.ODC6 = 0; } while(0)
+#define IO_DIG2_SetAnalogMode()  do { ANSELCbits.ANSC6 = 1; } while(0)
+#define IO_DIG2_SetDigitalMode() do { ANSELCbits.ANSC6 = 0; } while(0)
+
+// get/set IO_DIG3 aliases
+#define IO_DIG3_TRIS               TRISCbits.TRISC4
+#define IO_DIG3_LAT                LATCbits.LATC4
+#define IO_DIG3_PORT               PORTCbits.RC4
+#define IO_DIG3_WPU                WPUCbits.WPUC4
+#define IO_DIG3_OD                ODCONCbits.ODC4
+#define IO_DIG3_SetHigh()            do { LATCbits.LATC4 = 1; } while(0)
+#define IO_DIG3_SetLow()             do { LATCbits.LATC4 = 0; } while(0)
+#define IO_DIG3_Toggle()             do { LATCbits.LATC4 = ~LATCbits.LATC4; } while(0)
+#define IO_DIG3_GetValue()           PORTCbits.RC4
+#define IO_DIG3_SetDigitalInput()    do { TRISCbits.TRISC4 = 1; } while(0)
+#define IO_DIG3_SetDigitalOutput()   do { TRISCbits.TRISC4 = 0; } while(0)
+#define IO_DIG3_SetPullup()      do { WPUCbits.WPUC4 = 1; } while(0)
+#define IO_DIG3_ResetPullup()    do { WPUCbits.WPUC4 = 0; } while(0)
+#define IO_DIG3_SetPushPull()    do { ODCONCbits.ODC4 = 1; } while(0)
+#define IO_DIG3_SetOpenDrain()   do { ODCONCbits.ODC4 = 0; } while(0)
+#endif //BREADBOARD
 
 // get/set IO_OE aliases
 #define IO_OE_TRIS               TRISCbits.TRISC7

@@ -340,7 +340,7 @@ int16_t BMP280_readTemperature(void)
     return ((T*9)/5)+3200;
 }
 
-
+#ifdef BREADBOARD
 static uint8_t Decimal = 0b00000001;
 static uint8_t Digits[]={
     0b11111100, //0
@@ -354,6 +354,21 @@ static uint8_t Digits[]={
     0b11111110, //8
     0b11100110, //9
 };
+#else
+static uint8_t Decimal = 0b00010000;
+static uint8_t Digits[]={
+    0b10101111, //0
+    0b00001010, //1
+    0b11000111, //2
+    0b11001110, //3
+    0b01101010, //4
+    0b11101100, //5
+    0b11101101, //6
+    0b10001010, //7
+    0b11101111, //8
+    0b11101010, //9
+};
+#endif //BREADBOARD
 /*
 void ShiftClr()
 {
